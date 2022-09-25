@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&family=Rambla:wght@400;700&display=swap');
+
+// Reset
+a {
+    text-decoration: none;
+    color: white !important;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #272727;
+    color: #fff;
+    font-family: rambla;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+//  Unlock Lock css
+.hide {
+    visibility: hidden;
+}
+
+.lock {
+    z-index: 9999;
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    cursor: pointer !important;
+}
+
+// box-shadow: rgb(194, 202, 214) 0px 0.2em, rgb(194, 202, 214) 0px -0.2em, rgb(194, 202, 214) 0.2em 0px, rgb(194, 202, 214) -0.2em 0px;
+
+.lockUnlock {
+    z-index: 99999;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(30, 255, 0, 0.3), rgba(17, 16, 17, 0.3)), url(wallpaper2you_205177.gif);
+    background-size: cover;
+    opacity: 1;
+    // transition:  2s ease-out;
+    // opacity: .5;
+
+    .unlockContent {
+        justify-content: center;
+        color: #fff;
+        width: 400px;
+
+        input,
+        button {
+            width: 100%;
+        }
+
+        input {
+            padding: 10px 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            outline: none;
+            color: #272727;
+        }
+
+        button {
+            color: white;
+            border: none;
+            outline: none;
+            background: #000;
+            padding: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            transition: background-color 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+            &:hover {
+                color: #000;
+                background-color: #fff;
+                border-color: #000;
+            }
+        }
+    }
+}
+
+
+
+.header-section {
+    background-color: #000;
+    box-shadow: 0 1px 10px 4px #424242;
+}
+
+.header {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        // background-color: #000;
+        border-radius: 5px;
+        transition: background 1s ease-in-out;
+
+        .logo_style {
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            font-size: 1.5rem;
+
+            .logoDevv {
+                background-color: #fff;
+                padding: 4px 10px;
+                color: #000;
+                border-radius: 5px;
+                margin-left: -2px;
+            }
+
+            .logoSakib {
+                padding: 4px 10px 4px 15px;
+                font-size: 1.5rem;
+                border-radius: 3px;
+                margin-left: -13px;
+            }
+        }
+
+        &:hover {
+            .logoDevv {
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                background: #000;
+                color: #fff;
+                transition: 400ms ease-in-out;
+            }
+
+            .logo_style {
+                border-color: #000;
+                background: #fff;
+                transition: 400ms ease-in-out;
+            }
+
+            .logoSakib {
+                transition: 400ms ease-in-out;
+
+                color: #000;
+            }
+        }
+    }
+
+    .menuContainer {
+        width: 225px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                a {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+
+.hero-section {
+    height: calc(100vh - 67.83px);
+    position: relative;
+
+    .hero-title {
+        font-weight: bold;
+        font-size: 120px;
+    }
+
+    .hero-subtitle {
+        font-size: 4rem;
+    }
+
+    .hero-image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .fixed-img {
+        position: absolute;
+        width: 100px;
+        height: auto;
+    }
+
+    .git {
+        width: 70px;
+        top: 50px;
+        left: 15px;
+        animation: fixed-img 2s linear infinite alternate;
+    }
+
+    .vue {
+        top: 50px;
+        width: 40px;
+        transform: translateY(20px) rotate(50deg);
+        left: 350px;
+        animation: fixed-img-up-down 2s forwards infinite alternate;
+    }
+
+    .github {
+        top: 230px;
+        width: 40px;
+        transform: translateY(0px);
+        left: 250px;
+        animation: fixed-img-up-down 2s linear infinite alternate;
+        animation-delay: 400ms;
+    }
+
+    .bigImg,
+    .backendImg {
+        top: 400px;
+        opacity: .5;
+        width: 150px;
+        transform: translateY(0px);
+        left: 50%;
+        animation: fixed-img 2s backwards infinite alternate;
+        animation-delay: 400ms;
+    }
+
+    .backendImg {
+        top: 420px;
+        left: 35%;
+    }
+}
+
+@keyframes fixed-img {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+@keyframes fixed-img-up-down {
+    0% {
+        transform: translateY(0) rotate(20deg);
+
+    }
+
+    100% {
+        transform: translateX(30px) rotate(0deg);
+    }
+}
+
+@media (max-width: 360px) {
+    .header {
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+        .logo_style {
+            margin-bottom: 10px;
+        }
+    }
+
+    .hero-section {
+        margin-top: -60px;
+
+        .forMd {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: -100px;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+        }
+
+        .hero-tagline {
+            font-size: .8rem;
+        }
+
+        .hero-image {
+            margin-top: 40px;
+            width: 80vw;
+        }
+
+        .git {
+            top: 80px;
+        }
+
+        .github {
+            top: 200px;
+        }
+
+        .vue {
+            left: 200px;
+        }
+
+        .bigImg,
+        .backendImg {
+            display: none;
+        }
+
+    }
+}
+
+.alert-dismissible {
+    margin-bottom: -5px;
+}
