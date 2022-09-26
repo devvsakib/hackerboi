@@ -33,7 +33,11 @@ body {
     color: #fff;
     font-family: rambla;
     font-size: 16px;
-    overflow: hidden;
+    overflow: auto;
+}
+
+.alert .alert-black {
+    z-index: 999;
 }
 
 //  Unlock Lock css
@@ -54,16 +58,13 @@ body {
 .lockUnlock {
     z-index: 99999;
     width: 100vw;
-    overflow: hidden;
     height: 100vh;
     position: fixed;
     display: flex;
     align-items: center;
-    background: linear-gradient(0deg, rgba(30, 255, 0, 0.3), rgba(17, 16, 17, 0.3)), url(wallpaper2you_205177.gif);
+    background: linear-gradient(0deg, rgba(30, 255, 0, 0.3), rgba(17, 16, 17, 0.3)), url(assets/images/wallpaper2you_205177.gif);
     background-size: cover;
     opacity: 1;
-    // transition:  2s ease-out;
-    // opacity: .5;
 
     .unlockContent {
         justify-content: center;
@@ -185,6 +186,7 @@ body {
 .hero-section {
     height: calc(100vh - 67.83px);
     position: relative;
+    overflow-x: hidden;
 
     .hero-title {
         font-weight: bold;
@@ -246,7 +248,30 @@ body {
         top: 420px;
         left: 35%;
     }
+
+    .downArrow {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        right: 50%;
+        animation: upDown 600ms linear infinite alternate;
+
+        i {
+            font-size: 1.3rem;
+        }
+    }
+
+    @keyframes upDown {
+        from {
+            transform: translateY(0px);
+        }
+
+        to {
+            transform: translateY(10px);
+        }
+    }
 }
+
 
 @keyframes fixed-img {
     0% {
@@ -269,6 +294,103 @@ body {
     }
 }
 
+.alert-dismissible {
+    margin-bottom: -5px;
+}
+.alert-dismissible {
+    margin-bottom: -5px;
+}
+
+@media (max-width: 840px) {
+    .hero-section {
+        margin-top: -40px;
+
+        .hero-title {
+            font-size: 5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 3rem;
+        }
+
+        .hero-tagline {
+            font-size: .8rem;
+        }
+
+        .bigImg,
+        .backendImg {
+            margin-top: 40px;
+        }
+
+        .backendImg {
+            margin-left: -60px;
+        }
+
+    }
+}
+@media (max-width: 600px) {
+    .hero-section {
+        margin-top: -40px;
+
+        .hero-title {
+            font-size: 4rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+        }
+
+        .hero-tagline {
+            font-size: .8rem;
+        }
+    }
+}
+@media (max-width: 465px) {
+    .hero-section {
+        .forMd {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: -100px;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+        }
+
+        .hero-tagline {
+            font-size: .8rem;
+        }
+
+        .hero-image {
+            margin-top: 40px;
+            width: 80vw;
+        }
+
+        .git {
+            top: 80px;
+        }
+
+        .github {
+            top: 200px;
+        }
+
+        .vue {
+            left: 200px;
+        }
+
+        .bigImg,
+        .backendImg {
+            display: none;
+        }
+
+    }
+}
 @media (max-width: 360px) {
     .header {
         padding: 15px 0;
@@ -330,6 +452,42 @@ body {
     }
 }
 
-.alert-dismissible {
-    margin-bottom: -5px;
+@media (max-width: 275px) {
+    .header {
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+        .logo_style {
+            margin-bottom: 10px;
+        }
+    }
+    .hero-section {
+        margin-top: -40px;
+        text-align: center;
+        width: 100vw;
+        .forMd{
+            margin: 0 auto;
+        }
+        .col-6{
+            width: 100vw;
+            padding: 0;
+        }
+        .hero-title {
+            margin-left: -50px !important;
+            font-size: 20vw;
+        }
+        .hero-subtitle{
+            font-size: 12vw;
+            margin-left: -50px !important;
+        }
+        .hero-tagline{
+            margin-left: -50px !important;
+            font-size: 7vw;
+        }
+    }
+
+
 }
