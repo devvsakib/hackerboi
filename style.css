@@ -437,4 +437,9 @@ body {
     margin-left: -50px !important;
     font-size: 7vw;
   }
+}
+.footer-section footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #414040;
 }/*# sourceMappingURL=style.css.map */
