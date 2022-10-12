@@ -1,25 +1,9 @@
 const unlockLock = document.querySelector('.lockUnlock'),
     pass = document.querySelector('#pass'),
     lockAgain = document.querySelector('.lock'),
-    downArrow = document.querySelector('.downArrow'),
-    submit = document.querySelector('#submit');    
-var currentPass;
+    submit = document.querySelector('#submit')
 
 
-function PassCheck(){
-    currentPass = document.querySelector('#pass').value;
-}
-
-setInterval(() => {
-    const times = new Date();
-    const hour = times.getHours();
-    const minute = times.getMinutes();
-    let passToMatch = `${hour}${minute}`
-    if (Number(currentPass) == passToMatch) {
-        submit.style.backgroundColor = "LimeGreen";
-    }
-
-}, 100);
 
 
 submit.onclick = () => {
@@ -33,6 +17,8 @@ submit.onclick = () => {
         unlockLock.classList.add('hide');
         unlockLock.style.opacity = "0";
         unlockLock.style.transition = "1200ms cubic-bezier(0.25, 0.46, 0.45, 0.94)";
+
+
         document.body.style.overflow = "auto";
         pass.value = ""
     }
@@ -46,8 +32,6 @@ submit.onclick = () => {
 lockAgain.onclick = () => {
     unlockLock.classList.remove('hide');
     document.body.style.overflow = "hidden"
-    unlockLock.style.opacity = "1";
-
 }
 window.onscroll = () => {
     console.log(document.body.scrollTop);
