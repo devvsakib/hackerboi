@@ -1,8 +1,7 @@
 # Hacktoberfest Project
 ![Screenshot](assets/images/Screenshot_13.png)
 
-Use this project to collaborate with [Hacktoberfest](https://hacktoberfest.digitalocean.com) . Make Pull Request and get a chance to win hacktoberfest T-Shirt 
-
+Use this project to collaborate with [Hacktoberfest](https://hacktoberfest.digitalocean.com) . Make Pull Request and get a chance to win hacktoberfest T-Shirt. Avoid scam, make sure project has hacktoberfest label. So star nowww
 ## 1. Clone the repo
 ```
 $ git clone https://github.com/devvsakib/hackerboi
