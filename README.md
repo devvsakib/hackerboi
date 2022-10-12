@@ -1,5 +1,7 @@
-# I'am Hacker
+# Hacktoberfest Project
 ![Screenshot](assets/images/Screenshot_13.png)
+
+Use this project to collaborate with [Hacktoberfest](https://hacktoberfest.digitalocean.com) . Make Pull Request and get a chance to win hacktoberfest T-Shirt 
 
 ## 1. Clone the repo
 ```
