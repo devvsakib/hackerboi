@@ -27,7 +27,6 @@ submit.onclick = () => {
     }
     else {
         alert("Think Twice!!");
-        console.log(passToMatch);
     }
 }
 lockAgain.onclick = () => {
