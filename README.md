@@ -12,6 +12,10 @@ $ cd hackerboi
 ```
 ## 3. Start coding
 
+## Best repository 
+You can join with us here, one of the best repository to PR. PR your projects, showcase everyone
+[HACKTOBERFEST-REACT-PROJECTS](https://github.com/devvsakib/hacktoberfest-react-project)
+
 > While working, please disable Lock overlay. Otherwise you have to unlock everytime you update code
 
 ### LICENSE
