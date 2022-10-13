@@ -27,6 +27,7 @@ submit.onclick = () => {
     }
     else {
         alert("Think Twice!!");
+        console.log(passToMatch);
     }
 }
 lockAgain.onclick = () => {
@@ -34,6 +35,10 @@ lockAgain.onclick = () => {
     document.querySelector("body").style.overflow = "hidden"
 }
 window.onscroll = () => {
+    // if scrollY greater than 0 sticky-nav class will be added
+    var menuContainer = document.querySelector(".menuContainer");
+    menuContainer.classList.toggle("sticky-nav",window.scrollY>0);
+    
     if (window.scrollY <= 20) {
         document.querySelector(".downArrow").style.opacity = '1';
         document.querySelector(".downArrow").style.transition = '300ms ease-in-out';
