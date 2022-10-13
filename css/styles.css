@@ -34,16 +34,21 @@ body{
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 7rem;
 }
 .contributor{
     margin: 0 1rem;
     min-width: 300px;
     flex: 1;
+    position: relative;    
+    margin-bottom: 10rem;
 }
 .head-contributor{
-    margin: 1.75rem auto;
     width: 150px;
     height: 150px;
+    position: absolute;
+    top: -85px;
+    left: 25%;
 }
 img{
     width: 100%;
@@ -51,34 +56,34 @@ img{
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 10px 25px rgb(0,0,0,.25);
+    box-shadow: 2px 2px 10px 3px rgb(88, 127, 135);
 }
 .body-contribute{
     background-color: rgb(238,238,238);
-
-    padding: 2.5rem;
-    box-shadow: 2px 2px 10px 3px rgb(225,225,225);
-
+    padding-bottom: 0.4rem;
+    box-shadow: 2px 2px 10px 3px rgb(194, 193, 193);
+    padding-top: 80px;
+    border-radius: 12px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
 }
 .name{
     font-size: 1.5rem;
     color: rgb(50,50,50);
-    margin-bottom: .25rem;
-
+    margin-bottom: 0;
 }
 
 .socials .github{
-    font-size: 3rem;
-    padding: 10px;
-
+    font-size: 2.4rem;
+    padding: 4px 10px 10px 10px;
     color: black;
 }
 .socials .twitter{
-    font-size: 3rem;
-    margin: 20px;
+    font-size: 2.4rem;
+    padding: 4px 10px 10px 10px;
     color: black;
 }
 .socials i:hover{
     cursor: pointer;
-    background-color:rgb(225,225,225) ;
-    transition: .5s ease;
+    color:rgb(44, 32, 32) ;
+    transition: .4s ease;
 }
