@@ -31,17 +31,15 @@ submit.onclick = () => {
 }
 lockAgain.onclick = () => {
     unlockLock.classList.remove('hide');
-    document.body.style.overflow = "hidden"
+    document.querySelector("body").style.overflow = "hidden"
 }
 window.onscroll = () => {
-    console.log(document.body.scrollTop);
     if (window.scrollY <= 20) {
-        downArrow.style.opacity = '1';
-        downArrow.style.transition = 'opacity 1000ms ease-in-out';
+        document.querySelector(".downArrow").style.opacity = '1';
+        document.querySelector(".downArrow").style.transition = '300ms ease-in-out';
 
     } else {
-        downArrow.style.opacity = '0';
-        downArrow.style.transition = '1000ms ease-in-out';
-
+        document.querySelector(".downArrow").style.opacity = '0';
+        document.querySelector(".downArrow").style.transition = '300ms ease-in-out';
     }
 }
