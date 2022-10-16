@@ -44,4 +44,5 @@ Working with open source project is a rewarding experience that allows you to pr
 You must register and make four valid pull requests (PRs) between October 1-31 (in any time zone). PRs made before or after that won't be counted!!
 
 Visit the hactoberfest site for more details :- https://hacktoberfest.digitalocean.com
-
+## JOIN OUR COMMMUNITY
+DISCORD - [JOIN](https://discord.gg/6XRTeHRxWV)
