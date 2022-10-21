@@ -1,0 +1,154 @@
+this contain three files index.html, style.css and main.js
+I have seperated files with stars scroll and you will get to know 
+
+//********************************************************************************index.html***************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="faqs-container">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="questions-container">
+        <div class="content-container">
+          <div class="faq-header">
+            <h3>What is HackerBoi website?</h3>
+            <span class="open active">+</span>
+            <span class="close">-</span>
+          </div>
+
+          <div class="content">
+            <p>
+                It's an open-source project. 
+                By participating here,you are participating in HECKTOBERFEST 2022
+            </p>
+
+            
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="faq-header">
+            <h3>How do I see HackerBoi availability?</h3>
+            <span class="open active">+</span>
+            <span class="close">-</span>
+          </div>
+
+          <div class="content">
+            <p>
+                ----
+            </p>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="faq-header">
+            <h3>Why is HackerBoi so popular?</h3>
+            <span class="open active">+</span>
+            <span class="close">-</span>
+          </div>
+
+          <div class="content">
+            <p>
+              HackerBoi is built by developers for developers, and we're proud to be home to the worlds's largest open source community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
+*************************************************************************** style.css***********************************************************************************
+
+.faqs-container {
+    font-family: "Roboto", sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .faqs-container .questions-container {
+    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .faqs-container h2 {
+    padding: 4px 32px;
+    font-size: 28px;
+  }
+  
+  .faqs-container .faq-header {
+    display: flex;
+    background: #03071e;
+    color: #f1faee;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .faqs-container .faq-header .open,
+  .faqs-container .faq-header .close {
+    position: absolute;
+    right: 0;
+    padding: 0 32px;
+    font-size: 22px;
+    font-weight: bold;
+    transform: translateY(-8px);
+    opacity: 0;
+    transition: all 500ms;
+  }
+  
+  .faqs-container .faq-header .open.active,
+  .faqs-container .faq-header .close.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .faqs-container .faq-header h3 {
+    font-size: 20px;
+    padding: 0 32px;
+  }
+  
+  .faqs-container .content {
+    padding: 0 32px;
+    background: #fdfffc;
+    line-height: 2;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+  }
+  
+  .faqs-container .content.active {
+    max-height: 600px;
+  }
+  
+  
+  
+  **********************************************************************main.js*********************************************************************************
+  
+  const faqHeaders = document.querySelectorAll(".faqs-container .faq-header");
+
+faqHeaders.forEach((header, i) => {
+  header.addEventListener("click", () => {
+    header.nextElementSibling.classList.toggle("active");
+
+    const open = header.querySelector(".open");
+    const close = header.querySelector(".close");
+
+    if (header.nextElementSibling.classList.contains("active")) {
+      open.classList.remove("active");
+      close.classList.add("active");
+    } else {
+      open.classList.add("active");
+      close.classList.remove("active");
+    }
+  });
+});
