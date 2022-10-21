@@ -20,7 +20,7 @@ body{
 .title{
     font-size: 2.5rem;
     text-transform: uppercase;
-    color: rgb(50, 50, 50);
+    color: #FFFF;
     margin-bottom: .5rem;
 }
 .note{
