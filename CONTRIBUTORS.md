@@ -14,3 +14,4 @@
 | ------|----------|---------- |
 | DevvSakib | <a href="https://github.com/devvsakib/">DevvSakib</a> | <a href="mailto:devvsakib@gmail.com">E-Mail</a> |
 | RXBlade | <a href="https://github.com/RXBlade/">RXBlade</a> | <a href="mailto:pascutaandrei1999@gmail.com">E-Mail</a> |
+| NashidNoor | <a href="https://github.com/Nashid-Noor/">NashidNoor</a> | <a href="mailto:computronics2017py@gmail.com">E-Mail</a> |
